@@ -12,11 +12,11 @@ optional_depends pcre2 \
                  "--with-pcre2" "--without-pcre2" \
                  "for PCRE2 regular expressions support"
 
-optional_depends luit \
-                 "--enable-luit" "" \
-                 "for unicode support"
-
 optional_depends libutempter \
                  "--with-utempter" "" \
                  "for session logging in utmp and wtpm files" \
                  "y"
+
+optional_depends luit \
+                 "--enable-luit" "" \
+                 "for unicode support"

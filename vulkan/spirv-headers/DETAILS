@@ -1,0 +1,20 @@
+          MODULE=spirv-headers
+         VERSION=1.4.350.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-$VERSION.tar.gz
+      SOURCE_VFY=sha256:9905d9341f20388adb852c77dd982f2c4d539fd68e6c1f1bcebf034715f2d1d5
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/SPIRV-Headers-vulkan-sdk-$VERSION
+        WEB_SITE=https://github.com/KhronosGroup/SPIRV-Headers
+            TYPE=cmake
+         ENTERED=20221022
+         UPDATED=20260514
+           SHORT="machine-readable files for the SPIR-V Registry"
+
+cat << EOF
+A repository containing machine-readable files for the SPIR-V Registry. This includes:
+
+    Header files for various languages.
+    JSON files describing the grammar for the SPIR-V core instruction set and the extended instruction sets.
+    The XML registry file.
+    A tool to build the headers from the JSON grammar.
+EOF
